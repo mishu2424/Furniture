@@ -19,3 +19,30 @@ button[aria-current="false"] {
 /* .carousals:hover .sp-btn{
     display:block;
 }  */
+
+/* Container that holds the scrolling text */
+.scrolling-text-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Wrapping all texts together for seamless scroll */
+  .scrolling-wrapper {
+    display: flex; /* Use flexbox to keep all the text in a row */
+    animation: scroll-text 15s linear infinite; /* Apply the scroll animation */
+  }
+
+  
+  /* Keyframes for continuous scrolling */
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%); /* Start from the far right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move off the screen to the left */
+    }
+  }
+  
+  
+  
