@@ -5,3 +5,17 @@
 .font-playfair{
     font-family: "Playfair Display", serif;
 }
+/* slider buttons */
+/* When aria-current="true", show the outline */
+button[aria-current="true"] {
+    outline-color: white; 
+}
+  
+/* When aria-current="false", remove the outline */
+button[aria-current="false"] {
+    outline-color: transparent; /* Hides the outline */
+}
+/* carousals */
+/* .carousals:hover .sp-btn{
+    display:block;
+}  */
