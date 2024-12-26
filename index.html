@@ -35,6 +35,20 @@
       src="https://kit.fontawesome.com/8609bb128c.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            transitionDuration: {
+              1500: "1500ms", // Add a 3000ms duration class
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="m-0 font-kumbh">
     <header class="w-full bg-black">
@@ -48,34 +62,51 @@
           class="relative h-8 overflow-hidden rounded-lg text-white text-center"
         >
           <!-- Item 1 -->
-          <div class="duration-700 ease-out" data-carousel-item>
-            <!-- <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
-            <h1
-              class="text-xs lg:text-base hover:text-red-600 duration-150 py-1"
-            >
+          <div class="hidden duration-1500 ease-linear" data-carousel-item>
+            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
               Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
               Only.
             </h1>
           </div>
           <!-- Item 2 -->
-          <div class="duration-700 ease-out" data-carousel-item>
-            <h1
-              class="text-xs lg:text-base hover:text-red-600 duration-150 py-1"
-            >
+          <div class="hidden duration-1500 ease-linear" data-carousel-item>
+            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
               Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
               Only.
             </h1>
           </div>
           <!-- Item 3 -->
-          <div class="duration-700 ease-out" data-carousel-item="active">
-            <h1
-              class="text-xs lg:text-base hover:text-red-600 duration-150 py-1"
-            >
+          <div
+            class="hidden duration-1500 ease-linear"
+            data-carousel-item="active"
+          >
+            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
+              Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
+              Only.
+            </h1>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="hidden duration-1500 ease-linear"
+            data-carousel-item="active"
+          >
+            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
+              Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
+              Only.
+            </h1>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="hidden duration-1500 ease-linear"
+            data-carousel-item="active"
+          >
+            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
               Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
               Only.
             </h1>
           </div>
         </div>
+
         <!-- Slider controls -->
         <button
           type="button"
@@ -130,6 +161,7 @@
           </span>
         </button>
       </div>
+
       <div class="navbar bg-base-100 py-4">
         <div class="navbar-start">
           <div class="dropdown">
@@ -662,55 +694,238 @@
         </div>
       </div>
 
-      <div id="default-carousel" class="relative w-full h-[85vh] lg:h-[90vh] carousals" data-carousel="slide">
+      <div
+        id="default-carousel"
+        class="relative w-full h-[85vh] lg:h-[90vh] carousals"
+        data-carousel="slide"
+      >
         <!-- Carousel wrapper -->
         <div class="relative overflow-hidden rounded-lg h-full">
           <!-- Item 1 -->
-          <div class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture1.jpg')] bg-center bg-cover flex items-end" data-carousel-item>
+          <div
+            class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture1.jpg')] bg-center bg-cover flex items-end"
+            data-carousel-item
+          >
             <!-- <img
               src="./images/sliders/slider-furniture1.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
               alt="..."
             /> -->
-            <div class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20">
+            <div
+              class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20"
+            >
               <h2 class="text-4xl lg:text-6xl">Modern Work Desks</h2>
-              <p class="text-xl opacity-85">Enhance your productivity with intelligently designed work desks.</p>
-              <a class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none">Explore Collection <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
+              <p class="text-xl opacity-85">
+                Enhance your productivity with intelligently designed work
+                desks.
+              </p>
+              <a
+                class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none"
+                >Explore Collection
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
               </a>
             </div>
-
           </div>
           <!-- Item 2 -->
-          <div class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture2.jpg')] bg-center bg-cover flex items-end" data-carousel-item>
+          <div
+            class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture2.jpg')] bg-center bg-cover flex items-end"
+            data-carousel-item
+          >
             <!-- <img
               src="./images/sliders/slider-furniture2.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
               alt="..."
             /> -->
-            <div class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20">
+            <div
+              class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20"
+            >
               <h2 class="text-4xl lg:text-6xl">Cozy Living Room Sofas</h2>
-              <p class="text-xl opacity-85">Enhance your productivity with intelligently designed work desks.</p>
-              <a class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none">Explore Collection <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
+              <p class="text-xl opacity-85">
+                Enhance your productivity with intelligently designed work
+                desks.
+              </p>
+              <a
+                class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none"
+                >Explore Collection
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
               </a>
             </div>
           </div>
           <!-- Item 3 -->
-          <div class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture3.jpg')] bg-center bg-cover flex items-end" data-carousel-item>
+          <div
+            class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture3.jpg')] bg-center bg-cover flex items-end"
+            data-carousel-item
+          >
             <!-- <img
               src="./images/sliders/slider-furniture3.jpg"
               class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
               alt="..."
             /> -->
-            <div class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20">
+            <div
+              class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20"
+            >
               <h2 class="text-4xl lg:text-6xl">Elegant Dining Room</h2>
-              <p class="text-xl opacity-85">Enhance your productivity with intelligently designed work desks.</p>
-              <a class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none">Explore Collection <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-              </svg>
+              <p class="text-xl opacity-85">
+                Enhance your productivity with intelligently designed work
+                desks.
+              </p>
+              <a
+                class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none"
+                >Explore Collection
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture1.jpg')] bg-center bg-cover flex items-end"
+            data-carousel-item
+          >
+            <!-- <img
+              src="./images/sliders/slider-furniture3.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+              alt="..."
+            /> -->
+            <div
+              class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20"
+            >
+              <h2 class="text-4xl lg:text-6xl">Elegant Dining Room</h2>
+              <p class="text-xl opacity-85">
+                Enhance your productivity with intelligently designed work
+                desks.
+              </p>
+              <a
+                class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none"
+                >Explore Collection
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture2.jpg')] bg-center bg-cover flex items-end"
+            data-carousel-item
+          >
+            <!-- <img
+              src="./images/sliders/slider-furniture3.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+              alt="..."
+            /> -->
+            <div
+              class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20"
+            >
+              <h2 class="text-4xl lg:text-6xl">Elegant Dining Room</h2>
+              <p class="text-xl opacity-85">
+                Enhance your productivity with intelligently designed work
+                desks.
+              </p>
+              <a
+                class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none"
+                >Explore Collection
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="duration-700 ease-in-out bg-[url('./images/sliders/slider-furniture3.jpg')] bg-center bg-cover flex items-end"
+            data-carousel-item
+          >
+            <!-- <img
+              src="./images/sliders/slider-furniture3.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-full"
+              alt="..."
+            /> -->
+            <div
+              class="carousal-infos text-white space-y-3 py-10 pl-6 lg:pl-20"
+            >
+              <h2 class="text-4xl lg:text-6xl">Elegant Dining Room</h2>
+              <p class="text-xl opacity-85">
+                Enhance your productivity with intelligently designed work
+                desks.
+              </p>
+              <a
+                class="btn bg-white py-4 px-8 font-extrabold rounded-full hover:text-white hover:bg-red-600 duration-300 ease-in border-none"
+                >Explore Collection
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -728,7 +943,7 @@
           ></button>
           <button
             type="button"
-            class="w-2 h-2 rounded-full outline outline-offset-4 outline-2 outline-transparent "
+            class="w-2 h-2 rounded-full outline outline-offset-4 outline-2 outline-transparent"
             aria-current="false"
             aria-label="Slide 2"
             data-carousel-slide-to="1"
@@ -797,36 +1012,84 @@
       </div>
       <div class="scrolling-text-container h-auto whitespace-nowrap bg-red-600">
         <div class="scrolling-wrapper whitespace-nowrap gap-24 py-5">
-          <p class="scrolling-text text-white whitespace-nowrap">Returns are free within 14 days</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Free shipping on all orders over $20.00</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Limited time offer, shop now!</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Sign up for exclusive discounts</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Returns are free within 14 days</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Free shipping on all orders over $20.00</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Limited time offer, shop now!</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Sign up for exclusive discounts</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Returns are free within 14 days</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Free shipping on all orders over $20.00</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Limited time offer, shop now!</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
-          <p class="scrolling-text text-white whitespace-nowrap">Sign up for exclusive discounts</p>
-          <p class="scrolling-text text-white whitespace-nowrap"><i class="fas fa-bolt"></i></p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Returns are free within 14 days
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Free shipping on all orders over $20.00
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Limited time offer, shop now!
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Sign up for exclusive discounts
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Returns are free within 14 days
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Free shipping on all orders over $20.00
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Limited time offer, shop now!
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Sign up for exclusive discounts
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Returns are free within 14 days
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Free shipping on all orders over $20.00
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Limited time offer, shop now!
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            Sign up for exclusive discounts
+          </p>
+          <p class="scrolling-text text-white whitespace-nowrap">
+            <i class="fas fa-bolt"></i>
+          </p>
         </div>
       </div>
-      
-      
     </header>
-    <main></main>
+    <main>
+      <section class="top-collection my-24"></section>
+    </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
   </body>

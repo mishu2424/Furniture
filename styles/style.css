@@ -5,6 +5,8 @@
 .font-playfair{
     font-family: "Playfair Display", serif;
 }
+
+
 /* slider buttons */
 /* When aria-current="true", show the outline */
 button[aria-current="true"] {
@@ -30,17 +32,25 @@ button[aria-current="false"] {
   /* Wrapping all texts together for seamless scroll */
   .scrolling-wrapper {
     display: flex; /* Use flexbox to keep all the text in a row */
-    animation: scroll-text 15s linear infinite; /* Apply the scroll animation */
+    animation: scroll-text 30s linear infinite; /* Apply the scroll animation */
   }
 
   
-  /* Keyframes for continuous scrolling */
-  @keyframes scroll-text {
+/* Keyframes for continuous scrolling with fading effect */
+@keyframes scroll-text {
     0% {
       transform: translateX(100%); /* Start from the far right */
+      opacity: 0; /* Start as invisible */
+    }
+    30% {
+      opacity: 1; /* Fully visible */
+    }
+    70% {
+      opacity: 1; /* Stay visible */
     }
     100% {
       transform: translateX(-100%); /* Move off the screen to the left */
+      opacity: 0; /* Fade out */
     }
   }
   
