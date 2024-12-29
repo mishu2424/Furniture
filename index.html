@@ -63,14 +63,24 @@
         >
           <!-- Item 1 -->
           <div class="hidden duration-1500 ease-linear" data-carousel-item>
-            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
+            <h1 class="text-xs lg:text-base hover:text-red-600 duration-200 py-1">
               Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
               Only.
             </h1>
           </div>
           <!-- Item 2 -->
           <div class="hidden duration-1500 ease-linear" data-carousel-item>
-            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
+            <h1 class="text-xs lg:text-base hover:text-red-600 duration-200 py-1">
+              Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
+              Only.
+            </h1>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="hidden duration-1500 ease-linear"
+            data-carousel-item="active"
+          >
+            <h1 class="text-xs lg:text-base hover:text-red-600 duration-200 py-1">
               Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
               Only.
             </h1>
@@ -90,17 +100,7 @@
             class="hidden duration-1500 ease-linear"
             data-carousel-item="active"
           >
-            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
-              Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
-              Only.
-            </h1>
-          </div>
-          <!-- Item 3 -->
-          <div
-            class="hidden duration-1500 ease-linear"
-            data-carousel-item="active"
-          >
-            <h1 class="text-xs lg:text-base hover:text-red-600 py-1">
+            <h1 class="text-xs lg:text-base hover:text-red-600  py-1">
               Midseason Sale: 20% Off - Auto Applied at Checkout - Limited Time
               Only.
             </h1>
@@ -1088,7 +1088,57 @@
       </div>
     </header>
     <main>
-      <section class="top-collection my-24"></section>
+      <section class="top-collection my-24 lg:w-[90vw] mx-auto space-y-4">
+        <div class="collection-details flex items-center flex-col lg:flex-row lg:justify-between space-y-4">
+          <div class="text-3xl lg:text-5xl">
+            Top collection
+          </div>
+          <div class="group collection-infos relative">
+            <div class="view-collection border-b-2 border-[rgb(31,41,55)] group-hover:border-red-600 duration-500">
+              <a class="text-sm lg:text-xl font-semibold relative bottom-2 collection-link group-hover:text-red-600 duration-500">View All Collection</a>
+              <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 group-hover:w-full transition-all duration-500"></span>
+            </div>
+          </div>
+        </div>
+        <div class="collection-container grid grid-cols-1 lg:grid-cols-5 gap-3">
+          <div class="group child-container flex items-center flex-col justify-center space-y-2 py-3 px-3 ">
+            <div class="overflow-hidden rounded-full">
+              <img src="./images/assets/cls-furniture1.jpg" alt="furniture" class="rounded-full group-hover:scale-110 duration-1000">
+            </div>
+            <h3 class="text-3xl">Chairs</h3>
+            <h3 class="text-xl">12 items</h3>
+          </div>
+          <div class="group child-container flex items-center flex-col justify-center space-y-2 py-3 px-3 z-40">
+            <div class="overflow-hidden rounded-full">
+              <img src="./images/assets/cls-furniture2.jpg" alt="furniture" class="rounded-full group-hover:scale-110 duration-1000">
+            </div>
+            <h3 class="text-3xl">Chairs</h3>
+            <h3 class="text-xl">12 items</h3>
+          </div>
+          <div class="group child-container flex items-center flex-col justify-center space-y-2 py-3 px-3 z-40">
+            <div class="overflow-hidden rounded-full">
+              <img src="./images/assets/cls-furniture4.jpg" alt="furniture" class="rounded-full group-hover:scale-110 duration-1000">
+            </div>
+            <h3 class="text-3xl">Chairs</h3>
+            <h3 class="text-xl">12 items</h3>
+          </div>
+          <div class="group child-container flex items-center flex-col justify-center space-y-2 py-3 px-3 z-40">
+            <div class="overflow-hidden rounded-full">
+              <img src="./images/assets/cls-furniture5.jpg" alt="furniture" class="rounded-full group-hover:scale-110 duration-1000">
+            </div>
+            <h3 class="text-3xl">Chairs</h3>
+            <h3 class="text-xl">12 items</h3>
+          </div>
+          <div class="group child-container flex items-center flex-col justify-center space-y-2 py-3 px-3 z-40">
+            <div class="overflow-hidden rounded-full">
+              <img src="./images/assets/cls-furniture3.jpg" alt="furniture" class="rounded-full group-hover:scale-110 duration-1000">
+            </div>
+            <h3 class="text-3xl">Chairs</h3>
+            <h3 class="text-xl">12 items</h3>
+          </div>
+ 
+        </div>
+      </section>
     </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
